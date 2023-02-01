@@ -1,0 +1,73 @@
+/********MODAL********/
+
+.container-info-inside-modal {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  height: 450px;
+  justify-content: space-around;
+  font-size: 20px;
+  /* font-family: "Titillium Web", sans-serif; */
+  font-family: "Mulish", sans-serif;
+  overflow: hidden;
+
+  /* background-color: #0cb2ff; */
+}
+
+.container-info-inside-modal > * {
+  /* margin: 50px; */
+}
+
+.logout-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.icon-text-modal-logout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logout-text {
+  margin-left: 20px;
+}
+.vip-icon {
+  width: 50px;
+}
+.user-is-vip {
+  display: flex;
+  align-items: center;
+}
+/**********USER-INFO*********/
+.userinfo-container {
+  /* font-family: "Titillium Web", sans-serif; */
+  position: absolute;
+  /* margin: 100px; */
+  z-index: 1000;
+}
+
+.avatar {
+  margin: 15px;
+  border-radius: 50%;
+}
+.user-data-icon {
+  width: 40px;
+}
+
+.textito {
+  text-align: center;
+  /* font-family: "Titillium Web", sans-serif; */
+}
+/*************/
+.paypal-btn {
+  width: 190px;
+  text-align: center;
+}
+
+.cross-out {
+  width: 25px;
+  float: right;
+}

@@ -1,0 +1,33 @@
+{
+  "Users": [
+    {
+      "name": "master",
+      "email": "master@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 1661389188744,
+      "name": "jhhjjhfd",
+      "email": "g",
+      "password": "gfdgfd"
+    },
+    {
+      "id": 1661389203222,
+      "name": "yair",
+      "email": "yairmasterlol@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 1661389244068,
+      "name": "tronquitos",
+      "email": "yairmasterlol@gmail.com",
+      "password": "xrl8xdgta"
+    },
+    {
+      "id": 1661393647011,
+      "name": "beywey",
+      "email": "benja@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

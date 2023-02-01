@@ -1,0 +1,13 @@
+.mySwiper {
+  width: 250px;
+  height: 400px;
+}
+
+.swiper-slide-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 22px;
+  color: #fff;
+}

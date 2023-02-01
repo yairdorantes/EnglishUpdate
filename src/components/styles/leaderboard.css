@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+.leader-title {
+  /* background-image: linear-gradient(-10deg, #5fa6e8, #2455d0); */
+  background-clip: text;
+
+  color: white;
+}
+legend {
+  border: solid 5px #556ed5;
+  padding: 10px;
+  border-radius: 10px;
+}
+.leader-board {
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+.container-legend-leader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-board-img {
+  transition: 1s ease-in-out;
+  border: solid 1px #e3d80ae0;
+  border-radius: 5px;
+  color: yellow;
+  width: 140px;
+  height: 26px;
+  cursor: pointer;
+
+  margin: auto;
+}
+.hide-text-board-img {
+  opacity: 0;
+}
+.container-leader-board {
+  font-family: "Oswald", sans-serif;
+
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+.fieldset-leader {
+  margin: auto;
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  border: solid 4px #6ca9e2;
+  background-color: #0d1d46;
+  border-radius: 10px;
+}
+
+.leader-mobile {
+  width: 90%;
+  height: 79%;
+}
+.container-place-icons {
+  display: flex;
+  flex-direction: column;
+}
+.place-icon {
+  width: 50px;
+}
+.user-icon-leader {
+  width: 40px;
+  margin: auto;
+}
+.container-place-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 28px;
+}
+
+.icon-username {
+  display: flex;
+  flex-direction: column;
+}
+.tache-leader {
+  position: absolute;
+  width: 30px;
+  right: 1%;
+  top: 10px;
+}

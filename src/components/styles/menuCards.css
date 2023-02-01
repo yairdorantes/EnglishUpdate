@@ -1,0 +1,44 @@
+.container-menu-cards {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+
+  /* background-color: aqua; */
+}
+.sub-menu {
+  margin: 10px;
+}
+.square-background-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: rgba(15, 19, 19, 0.493);
+  backdrop-filter: blur(4px);
+}
+.container-img-text-sub-cards {
+  /* margin: auto; */
+  text-align: center;
+}
+.container-text-sub-cards {
+  margin-top: 10px;
+}
+
+.img-sub-cards {
+  width: 50px;
+}
+
+.container-menu-cards {
+  font-family: "Mulish", sans-serif;
+}
+
+.bg-menu-cards {
+  height: 100vh;
+  background-image: url("../../media/last.jpg");
+  background-size: cover;
+  background-position: center;
+}

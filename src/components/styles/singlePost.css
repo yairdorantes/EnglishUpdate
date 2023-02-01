@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.container-post-content {
+  font-family: "Mulish", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.post-content {
+  width: 100%;
+  margin: auto;
+}
+.btn-send-comment {
+  width: 25px;
+  transition: 1.5s;
+  margin-left: 10px;
+}
+
+.box-text-post {
+  margin-top: 40px;
+  white-space: pre-wrap;
+
+  /* font-size: 17px; */
+  /* padding-: 45px; */
+}
+.title-post {
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .post-content {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .post-content {
+    width: 40%;
+  }
+}
+.box-image-post {
+  text-align: center;
+  margin-top: 40px;
+}
+.container-title-post {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-single-post {
+  width: 100%;
+}
+
+.comment-section {
+  margin-top: 100px;
+  text-align: center;
+}
+.lone-comment {
+  margin: 12px;
+  /* display: inline-block; */
+}
+
+.author-comment {
+  font-size: 20px;
+  font-weight: 700;
+}
+.date-comment {
+  font-size: 12px;
+}
+.comment-input {
+  color: #ffffff;
+  width: 80%;
+  border: none;
+  background-color: #1e2127;
+  border-bottom: 1px solid #5f5a5a;
+  padding: 5px 10px;
+  outline: none;
+  overflow: auto;
+  font-size: 16px;
+}
+.comment-input:focus {
+  outline: none;
+
+  border-bottom: 1px solid #fffefe;
+}
+.post-comment {
+  margin-top: 8px;
+  font-size: 20px;
+}
+.comment-input::placeholder {
+  color: rgb(158, 158, 158);
+}

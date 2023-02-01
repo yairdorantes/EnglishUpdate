@@ -1,0 +1,93 @@
+/****MENU******/
+.welcome-text {
+  text-align: center;
+}
+
+.container-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+}
+.container-menu > div {
+  cursor: pointer;
+}
+
+.container-data-menu-option {
+  padding: 10px;
+}
+.square-background {
+  backdrop-filter: blur(4px);
+  background-color: rgba(7, 2, 2, 0.527);
+  margin: 30px;
+  width: 180px;
+  height: 200px;
+  border-radius: 20px;
+  margin-top: 70%;
+  /*filter: blur(3px);*/
+}
+
+.container-img-menu {
+  margin: auto;
+  /*
+  background: #254054ce;
+
+  border-radius: 50%; */
+  width: 100%;
+  height: 65px;
+}
+.img-learning-section {
+  margin-top: 5px;
+  width: 60px;
+}
+.container-name-section {
+  margin-top: 40px;
+  font-family: "Rancho", cursive;
+
+  font-size: 40px;
+}
+.bg-menu {
+  position: relative;
+  height: 100vh;
+  /* background-color: #04031c; */
+
+  /* background-image: url("../src/media/carrito.jpg"); */
+  background-image: url(../../media/try5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.link {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: #c8beb8;
+}
+
+.leader-board {
+  text-align: center;
+}
+.places-points {
+  text-align: center;
+  /* margin-top: -10px; */
+}
+.trofeo {
+  width: 50px;
+}
+@media only screen and (max-width: 480px) {
+  .square-background {
+    border-radius: 20px;
+    height: 200px;
+    margin: 15px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .square-background {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .square-background {
+    /* margin-top: 1px; */
+    margin: 10px;
+  }
+}

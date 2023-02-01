@@ -1,0 +1,11 @@
+.pencil-icon {
+  width: 40px;
+}
+.del-icon {
+  width: 40px;
+}
+.container-icons-edit {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

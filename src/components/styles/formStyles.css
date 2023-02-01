@@ -1,0 +1,116 @@
+/************Login Styles ****************/
+.login-form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("./media/night.jpg"); */
+  background-image: url("../../media/yair.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Mulish", sans-serif;
+  /* font-size: 20px; */
+}
+.login-container {
+  /* margin-top: 19vh; */
+  /* top: 10%; */
+  display: flex;
+  /* align-items: center; */
+  height: 100vh;
+  /* background-color: #0cd57e; */
+  /* margin-top: 100px; */
+}
+
+.form {
+  font-size: 20px;
+  width: 440px;
+  height: 450px;
+
+  border-radius: 20px;
+  /* box-shadow: 0 0 20px -10px #000; */
+  margin: auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Mulish", sans-serif; */
+
+  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0);
+}
+.btn-register {
+  text-align: center;
+  font-size: 20px;
+}
+.btn-register > button {
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+  width: 65%;
+  margin: 20px;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  background: linear-gradient(
+    250deg,
+    rgba(34, 201, 237, 1) 19%,
+    rgba(8, 152, 225, 1) 75%
+  );
+}
+
+.parrafo {
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  transition: all 0.3s;
+  border-bottom: 2px solid #fcfcfc;
+}
+.parrafo:focus {
+  border-bottom: 2px solid #0cd57e;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+.parrafo:before {
+  content: attr(type);
+  display: block;
+  margin: 15px 0 0;
+  font-size: 14px;
+  color: #3399ff;
+}
+.btn-form {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  /* font-family: "Montserrat", sans-serif; */
+  border: 2px solid #78788c;
+  background: 0;
+  color: #3399ff;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+input {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.eye {
+  position: absolute;
+  top: 27%;
+  left: 85%;
+}
+
+.eye-icon {
+  width: 30px;
+}
+.eye-create {
+  top: 49%;
+}

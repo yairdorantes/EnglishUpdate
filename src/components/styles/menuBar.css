@@ -1,0 +1,46 @@
+.container-menu-bar {
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* left: 50vw; */
+  z-index: 999;
+  margin-bottom: 10px;
+}
+.bigger {
+  width: 10000px;
+  /* font-size: 10.5em; */
+}
+.container-menus-bar {
+  display: flex;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  border-color: #626683;
+  background-color: #09090996;
+  padding: 10px;
+  width: 200px;
+  justify-content: center;
+  gap: 15px;
+}
+.link-my-menu {
+  /* margin: 12px; */
+  text-decoration: none;
+  @apply mx-0;
+}
+.link-element {
+  text-decoration: none;
+  color: white;
+}
+.icon-menu-bar {
+  width: 33px;
+}
+
+.low-brightness {
+  filter: brightness(45%);
+}
+a:link:a:active {
+  margin-top: 100px;
+}

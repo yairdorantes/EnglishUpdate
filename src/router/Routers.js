@@ -15,6 +15,7 @@ import SubMenuCard from "../components/SubMenuCard";
 import Phrases from "../components/Phrases";
 import NewLogin from "../components/NewLogin";
 import NewSignUp from "../components/NewSignUp";
+import NewLeaderBoard from "../components/NewLeaderBoard";
 const Routers = () => {
   return (
     <AuthProvider>
@@ -36,7 +37,7 @@ const Routers = () => {
 
           {/* <Route path="/stripe" element={<Stripe />}></Route> */}
           <Route path="/" element={<MenuV2 />} />
-          {/* <Route path="/test" element={<NewSignUp />}></Route> */}
+          <Route path="/test" element={<NewLeaderBoard />}></Route>
         </Route>
       </Routes>
     </AuthProvider>

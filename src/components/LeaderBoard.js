@@ -43,6 +43,7 @@ const LeaderBoard = ({ isBoard, hideLeaderboard }) => {
       .get(`${mySite}topusers/`)
       .then((res) => {
         setTops(res.topuser);
+        console.log(res);
       });
     helpHttp()
       .get(`${mySite}users/${user.user_id}`)
@@ -94,6 +95,7 @@ const LeaderBoard = ({ isBoard, hideLeaderboard }) => {
                   <div>Posición</div>
                   <div>Usuario</div>
                   <div>XP</div>
+                  {/* <div>{tops[0].username}</div> */}
                 </div>
                 {!tops ? (
                   <Loader></Loader>

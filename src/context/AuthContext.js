@@ -7,6 +7,8 @@ const AuthContext = createContext();
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
+  let [showLeaderBoard, setShowLeaderBoard] = useState(false);
+  const handleLeaderBoard = () => setShowLeaderBoard(!showLeaderBoard);
   let [authTokens, setAuthTokens] = useState(() =>
     localStorage.getItem("authTokens")
       ? JSON.parse(localStorage.getItem("authTokens"))
@@ -118,6 +120,8 @@ export const AuthProvider = ({ children }) => {
     loginUser: loginUser,
     logoutUser: logoutUser,
     loginAfterSignUp,
+    showLeaderBoard: showLeaderBoard,
+    handleLeaderBoard,
   };
 
   // useEffect(() => {

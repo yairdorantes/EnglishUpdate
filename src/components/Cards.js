@@ -22,6 +22,7 @@ import { isMobile } from "react-device-detect";
 import AWS from "aws-sdk";
 import axios from "axios";
 import Phrases from "./Phrases";
+import NewMenu from "./NewMenu";
 // import CardTuto from "./CardTuto";
 
 let url = "";
@@ -213,6 +214,8 @@ const Cards = () => {
 
   return (
     <>
+      <NewMenu />
+
       {/* <AboutUser wasUp={result}></AboutUser> */}
 
       <div className="all-cards">
@@ -448,8 +451,6 @@ const Cards = () => {
         modalIsOpen={modalIsOpen}
         openModal={openModal}
       />
-
-      <MenuBar wasUp={result} />
     </>
   );
 };

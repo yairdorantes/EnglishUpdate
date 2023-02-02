@@ -9,12 +9,14 @@
   font-size: 20px;
   /* background-color: re; */
 }
+
 .modal-delete-card {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Mulish", sans-serif;
+  /* background-color: rgba(0, 0, 0, 0.784); */
 }
 .container-form-card {
   display: flex;

@@ -288,7 +288,7 @@ const FormCard = ({ modalIsOpen, openModal, fetchApi, cardData }) => {
                     value={form.img_url}
                     onChange={handleChange}
                     className="input-form-card"
-                    type="text"
+                    type="url"
                     placeholder="Dirección de la imagen"
                   />
                   <span

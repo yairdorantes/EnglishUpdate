@@ -9,6 +9,7 @@ import remarkGfm from "remark-gfm";
 import { isMobile } from "react-device-detect";
 import mySite from "./Domain";
 import MenuBar from "./MenuBar";
+import NewMenu from "./NewMenu";
 
 const parametros = {
   method: "GET",
@@ -35,6 +36,7 @@ const PostPage = () => {
 
   return (
     <>
+      <NewMenu />
       <div className="container-post-content pb-[100px]">
         {!post ? (
           <Loader></Loader>
@@ -60,7 +62,6 @@ const PostPage = () => {
           </div>
         )}
       </div>
-      <MenuBar></MenuBar>
     </>
   );
 };

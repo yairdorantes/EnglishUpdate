@@ -16,6 +16,8 @@ import Phrases from "../components/Phrases";
 import NewLogin from "../components/NewLogin";
 import NewSignUp from "../components/NewSignUp";
 import NewLeaderBoard from "../components/NewLeaderBoard";
+import NewMenu from "../components/NewMenu";
+import UserInfo from "../components/UserInfo";
 const Routers = () => {
   return (
     <AuthProvider>
@@ -36,8 +38,8 @@ const Routers = () => {
           {/* <Route path="/form-card" element={<FormCard />}></Route> */}
 
           {/* <Route path="/stripe" element={<Stripe />}></Route> */}
-          <Route path="/" element={<MenuV2 />} />
-          <Route path="/test" element={<NewLeaderBoard />}></Route>
+          <Route path="/" element={<SubMenuCard />} />
+          <Route path="/test" element={<UserInfo />}></Route>
         </Route>
       </Routes>
     </AuthProvider>

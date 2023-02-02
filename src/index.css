@@ -18,7 +18,13 @@
   --main-bg-color: #181a1b;
   --main-color: #ffffff;
 }
-
+.mio {
+  background-color: #000000d8;
+  /* width: 100v; */
+  /* height: 100%; */
+  position: fixed;
+  z-index: 100;
+}
 * {
   margin: 0;
   padding: 0;

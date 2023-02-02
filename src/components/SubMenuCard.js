@@ -3,10 +3,9 @@ import { helpHttp } from "../helpers/helpHttp";
 import { useEffect, useState } from "react";
 import me from "../media/my.png";
 import { Link } from "react-router-dom";
-import MenuBar from "./MenuBar";
-import { isMobile } from "react-device-detect";
 import mySite from "./Domain";
 import Loader from "./Loader";
+import NewMenu from "./NewMenu";
 
 // http://127.0.0.1:8000/api/cards/animales
 const SubMenuCard = () => {
@@ -31,7 +30,9 @@ const SubMenuCard = () => {
   }, []);
   return (
     <div>
-      <div>
+      <NewMenu />
+
+      <div className="w-screen h-screen bg-base-200">
         <div className="p-24 flex flex-wrap  items-center justify-center">
           <div
             className={`flex-shrink-0 m-6 relative overflow-hidden bg-rose-800 rounded-lg max-w-xs shadow-lg`}
@@ -159,7 +160,6 @@ const SubMenuCard = () => {
           )}
         </div>
       </div>
-      <MenuBar></MenuBar>
     </div>
   );
 };

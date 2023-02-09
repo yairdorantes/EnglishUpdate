@@ -7,8 +7,6 @@ const AuthContext = createContext();
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
-  let [showLeaderBoard, setShowLeaderBoard] = useState(false);
-  const handleLeaderBoard = () => setShowLeaderBoard(!showLeaderBoard);
   let [authTokens, setAuthTokens] = useState(() =>
     localStorage.getItem("authTokens")
       ? JSON.parse(localStorage.getItem("authTokens"))
@@ -25,7 +23,6 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   let loginUser = async (e) => {
-    console.log(e.target);
     e.preventDefault();
     let response = await fetch(`${mySite}token/`, {
       method: "POST",
@@ -40,11 +37,8 @@ export const AuthProvider = ({ children }) => {
     let data = await response.json();
     if (response.status === 200) {
       console.log("success");
-      console.log(data);
       setAuthTokens(data);
-
       setUser(jwt_decode(data.access));
-      console.log(jwt_decode(data.access));
       localStorage.setItem("authTokens", JSON.stringify(data));
       navigate("/");
     } else {
@@ -120,8 +114,6 @@ export const AuthProvider = ({ children }) => {
     loginUser: loginUser,
     logoutUser: logoutUser,
     loginAfterSignUp,
-    showLeaderBoard: showLeaderBoard,
-    handleLeaderBoard,
   };
 
   // useEffect(() => {

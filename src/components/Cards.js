@@ -27,6 +27,10 @@ import NewMenu from "./NewMenu";
 
 let url = "";
 const urlImageCard = "https://res.cloudinary.com/tolumaster/image/upload/v1/";
+const API_KEY = "60c9c98bb968461eb176f4d26b790bf2",
+  language = "en-us",
+  speed = 0,
+  voice = "female";
 
 const Cards = () => {
   let { user } = useContext(AuthContext);
@@ -191,22 +195,9 @@ const Cards = () => {
   };
 
   const handleAudio = (word) => {
-    const params = {
-      OutputFormat: "mp3", // or 'ogg_vorbis'
-      Text: word,
-      VoiceId: "Salli",
-    };
-    polly.synthesizeSpeech(params, (err, data) => {
-      if (err) {
-        console.log(err);
-      } else {
-        const audioBlob = new Blob([data.AudioStream], { type: "audio/mpeg" });
-        const audioUrl = URL.createObjectURL(audioBlob);
-        setAudio(audioUrl);
-
-        // you can then use the audioUrl to play the audio file in your app
-      }
-    });
+    const urlAudioAPI = `http://api.voicerss.org/?key=${API_KEY}&src=${word}&hl=${language}&r=${speed}&c=${voice}`;
+    console.log(urlAudioAPI);
+    setAudio(urlAudioAPI);
   };
   useEffect(() => {
     audioRef.current.play();
@@ -433,7 +424,7 @@ const Cards = () => {
               Quiz
             </button>
             <Link to="/phrases" state={{ crts: cards.cards }}>
-              <button
+              {/* <button
                 className="btn btn-secondary"
                 onClick={() => {
                   console.log(cards.cards);
@@ -441,7 +432,7 @@ const Cards = () => {
                 }}
               >
                 HardCore quiz
-              </button>
+              </button> */}
             </Link>
           </div>
         )}

@@ -13,7 +13,7 @@ const initialForm = {
   password: "",
 };
 const LoginPage = () => {
-  let { loginUser, logoutUser, loginAfterSignUp } = useContext(AuthContext);
+  let { loginUser } = useContext(AuthContext);
   const [eye, setEye] = useState(false);
 
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ const LoginPage = () => {
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.username || !form.email || !form.password) {
       alert("Por favor llena todos los datos");
@@ -52,13 +52,12 @@ const LoginPage = () => {
         return;
       }
       // logoutUser();
-      navigate("/menu");
+      navigate("/");
     }
     setForm((form["password"] = form["password"]));
     createData(form);
-    console.log(form["password"]);
 
-    handleReset();
+    // handleReset();
   };
 
   const handleReset = (e) => {

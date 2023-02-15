@@ -47,32 +47,6 @@ export const AuthProvider = ({ children }) => {
   };
   // let loginAfterSignUp =()=>{
 
-  let loginAfterSignUp = async (dataSignUp) => {
-    let response = await fetch(`/api/token/`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: dataSignUp.username,
-        password: dataSignUp.password,
-      }),
-    });
-    let data = await response.json();
-
-    if (response.status === 200) {
-      console.log("success");
-      console.log(data);
-      setAuthTokens(data);
-
-      setUser(jwt_decode(data.access));
-      console.log(jwt_decode(data.access));
-      localStorage.setItem("authTokens", JSON.stringify(data));
-      navigate("/");
-    } else {
-      alert("something went wrong");
-    }
-  };
   // }
 
   let logoutUser = () => {
@@ -113,7 +87,6 @@ export const AuthProvider = ({ children }) => {
     authTokens: authTokens,
     loginUser: loginUser,
     logoutUser: logoutUser,
-    loginAfterSignUp,
   };
 
   // useEffect(() => {

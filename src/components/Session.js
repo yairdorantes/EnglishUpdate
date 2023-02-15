@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import eyes from "../media/eye2.png";
 import closeye from "../media/eyeclose.png";
-import NewLogin from "./NewLogin";
+// import NewLogin from "./NewLogin";
 
 const initialForm = {
   username: "",
@@ -24,10 +24,6 @@ const Session = () => {
       ...form,
       [e.target.name]: e.target.value,
     });
-  };
-
-  const handleReset = (e) => {
-    setForm(initialForm);
   };
 
   const toggleEye = () => {

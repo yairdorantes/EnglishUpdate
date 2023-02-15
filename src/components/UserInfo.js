@@ -74,7 +74,7 @@ const UserInfo = ({ showUserInfo }) => {
 
           <div className="mt-8 ">
             <h2 className="text-white font-bold text-2xl tracking-wide">
-              Bienvenido <br />
+              Bienvenid@ <br />
               {user.username}
             </h2>
           </div>

@@ -5,9 +5,9 @@ const Loader = () => {
   return (
     <>
       <div className="flex justify-center ">
-        <div class="loader-wrapper-1">
-          <div class="loader-1">
-            <div class="loader-1 loader-inner-1"></div>
+        <div className="loader-wrapper-1">
+          <div className="loader-1">
+            <div className="loader-1 loader-inner-1"></div>
           </div>
         </div>
       </div>

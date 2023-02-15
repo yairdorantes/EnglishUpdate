@@ -8,7 +8,6 @@ import { Pagination, EffectCards, Mousewheel, Keyboard } from "swiper";
 import wordSound from "../media/cards/audio.png";
 import iconAdd from "../media/add.png";
 import Loader from "./Loader";
-import MenuBar from "./MenuBar";
 import { Link, NavLink, useParams } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import FormCard from "./FormCard";
@@ -19,9 +18,8 @@ import OutsideClickHandler from "react-outside-click-handler";
 import next from "../media/next3.png";
 import mySite from "./Domain";
 import { isMobile } from "react-device-detect";
-import AWS from "aws-sdk";
 import axios from "axios";
-import Phrases from "./Phrases";
+// import Phrases from "./Phrases";
 import NewMenu from "./NewMenu";
 // import CardTuto from "./CardTuto";
 
@@ -55,11 +53,6 @@ const Cards = () => {
   const [mode, setMode] = useState(true);
   const [checked, setChecked] = useState();
   const [loader, setLoader] = useState(false);
-  const polly = new AWS.Polly({
-    region: "us-east-1",
-    accessKeyId: "AKIAU2DSU7LYS7FGQID2",
-    secretAccessKey: "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",
-  });
 
   const customStyles = {
     content: {
@@ -91,6 +84,7 @@ const Cards = () => {
     axios.get(url).then((res) => {
       setCards(res.data);
       setLoader(false);
+      console.log(res.data);
     });
   };
 
@@ -194,14 +188,11 @@ const Cards = () => {
     setMode(!mode);
   };
 
-  const handleAudio = (word) => {
-    const urlAudioAPI = `http://api.voicerss.org/?key=${API_KEY}&src=${word}&hl=${language}&r=${speed}&c=${voice}`;
-    console.log(urlAudioAPI);
-    setAudio(urlAudioAPI);
-  };
-  useEffect(() => {
+  const handleAudio = (sound) => {
+    const audio = `data:audio/mpeg;base64,${sound}`;
+    setAudio(audio);
     audioRef.current.play();
-  }, [audio]);
+  };
 
   return (
     <>
@@ -263,7 +254,7 @@ const Cards = () => {
                     <button
                       className="btn-sound-card"
                       onClick={() => {
-                        handleAudio(card.cardTitle);
+                        handleAudio(card.cardSound);
                       }}
                     >
                       <img className="word-sound" src={wordSound} alt="" />
@@ -273,7 +264,7 @@ const Cards = () => {
               );
             })
           )}
-          <audio src={audio} ref={audioRef}></audio>
+          <audio autoPlay src={audio} ref={audioRef} />
         </Swiper>
         {paramsUrl.section === "mis-cartas" && (
           <div className="container-icon-add">

@@ -24,7 +24,6 @@ const customStyles = {
   overlay: { zIndex: 999, backgroundColor: "#171515ce" },
 };
 const urlImageCard = "https://res.cloudinary.com/tolumaster/image/upload/v1/";
-
 const DeleteCards = () => {
   let { user } = useContext(AuthContext);
 
